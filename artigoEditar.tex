@@ -1,0 +1,271 @@
+%--------------------------------------------------------------------------------------------------
+% OBSERVACAO:
+% 
+% -> Arquivos que você pode editar:
+%    - artigo.tex
+%    - artigo_bibliografia.bib
+%
+% -> Arquivo .TeX codificado em UTF8                                                             
+% -> Bibliografia em arquivo .bib (arquivo_bibliografia.bib)                                      
+% -> Arquivo de imagens em .jpg, .eps ou .pdf
+% -> Para compilar o TeX, execute 'compila_TEX.bat' (terminal do windows)
+% 
+% versão 1.1 - 19/05/2016
+% versão 1.0 - 18/08/2015
+%--------------------------------------------------------------------------------------------------
+\documentclass{classe_cn}                 % Modelo <nao edite o arquivo classe_cn.cls>
+\usepackage[brazil]{babel}                % Acentos
+\usepackage[utf8]{inputenc}               % Codificação UTF8 (atenção aqui!)
+\usepackage{graphicx}                     % Figura
+\usepackage{amssymb}                      % Simbolos matematicos
+\usepackage{color}                        % Cores
+\usepackage{amsfonts}                     % Fontes
+\usepackage{amsmath}                      % Fontes
+\usepackage[fixlanguage]{babelbib}        % Acentos
+\usepackage[normalem]{ulem}               % OK
+\usepackage[retainorgcmds]{IEEEtrantools} % Formulas padrão IEEE
+\usepackage{omlmathbf}                    % Simbolos Matematicos
+\usepackage{epstopdf}                     % Figuras .eps
+\usepackage{setspace}                     % Espaçamento flexível
+\usepackage{cmap}                         % Mapear caracteres especiais no PDF
+\usepackage{textcomp}                     % Funções e outros símbolos matemáticos
+\usepackage{verbatim}                     % Pacotes verbatim
+\usepackage{wrapfig}
+\usepackage{picins}
+\startlocaldefs
+\endlocaldefs
+
+%--------------------------------------------------------------------------------------------------
+% Inicio do Documento
+%--------------------------------------------------------------------------------------------------
+\begin{document}
+\begin{frontmatter}        % Não alterar
+\begin{fmbox}              % Não alterar
+\dochead{Gerência da informação} % Não alterar
+
+%--------------------------------------------------------------------------------------------------
+% Titulo do seu Trabalho
+%   - pequeno bug (nao funciona cedilha)
+%   - editar manualmente o cedilha na classe_cn.cls, linha 1015.
+%--------------------------------------------------------------------------------------------------
+\title{Internet das coisas}
+
+%------------------------------------------------
+% Informações sobre o autor #1
+% - Alice Fernandes Silva
+%------------------------------------------------
+\author[
+  addressref = {aff1},                 % Identifica o autor #1
+  email      = {alice.silva@ccc.ufcg.edu.br} % email para contato
+]
+{
+  \inits{AFS}      % Letras iniciais do autor #1
+  \fnm{Alice F.}  % Nome do autor #1 (first and middle name)
+  \snm{Silva}   % Ultimo nome do autor #1 (last name)
+}
+%------------------------------------------------
+% Informações sobre o autor #2
+% - Ellen
+%------------------------------------------------
+\author[
+  addressref = {aff1},                      % Identifica o autor
+  email      = {ellen@ccc.ufcg.edu.br} % email para contato
+]
+{
+  \inits{E}       % Letras iniciais do autor #2
+  \fnm{Ellen}  % Nome do autor #2 (first and middle name)
+  \snm{Desconhecido ainda}    % Ultimo nome do autor #2 (last name)
+}
+%------------------------------------------------
+% Informações sobre o autor #3
+% - Ivyna Rayany Santino Alves
+%------------------------------------------------
+\author[
+  addressref = {aff1},                       % Identifica o autor
+  email      = {ivyna.alves@ccc.ufcg.edu.br} % email para contato
+]
+{
+  \inits{IRSA}      % Letras iniciais do autor #3
+  \fnm{Ivyna Rayany Santino} % Nome do autor #3 (first and middle name)
+  \snm{Alves}    % Ultimo nome do autor #3 (last name)
+}
+%------------------------------------------------
+% Informações sobre o autor #4
+% - Kaio Kassiano Moura Oliveira 
+%------------------------------------------------
+\author[
+  addressref = {aff1},                 % Identifica o autor
+  email      = {kaio.kassiano.oliveira@ccc.ufcg.edu.br} % email para contato
+]
+{
+  \inits{KKMO}     % Letras iniciais do autor #4
+  \fnm{Kaio Kassiano Moura} % Nome do autor #4 (first and middle name)
+  \snm{Oliveira}     % Ultimo nome do autor #4 (last name)
+}
+
+%------------------------------------------------
+% Endereço dos autores
+%------------------------------------------------
+\address[id=aff1]{
+  \orgname{Universidade Federal de Campina Grande,
+           Centro de Tecnologia e Recursos Naturais,
+           Unidade Acadêmica de Engenharia Civil},
+  \street{Rua Aprígio Veloso, 882, Bairro Universitário},
+  \postcode{58429-140},
+  \city{Campina Grande},
+  \cny{Brasil.}
+}
+
+\end{fmbox}
+
+%--------------------------------------------------------------------------------------------------
+% Resumo do Trabalho
+%--------------------------------------------------------------------------------------------------
+\begin{abstractbox}
+	
+\begin{abstract} 
+Escrever no máximo $150$ palavras no resumo do trabalho. Exemplo: The objective of this work is to determine if people are interacting in TV video by detecting whether they are looking at each other or not.We determine both the temporal period of the interaction and also spatially localize the relevant people. We make the following four contributions: (\textit{i}) head detection with implicit coarse pose information (front, profile, back); (\textit{ii}) continuous head pose estimation in unconstrained scenarios (TV video) using Gaussian process regression; (\textit{iii}) propose and evaluate several methods for assessing whether and when pairs of people are looking at each other in a video shot; and (\textit{iv}) introduce new ground truth annotation for this task, extending the TV human interactions dataset. The performance of the methods is evaluated on this dataset, which consists of $300$ video clips extracted from TV shows. Despite the variety and difficulty of this video material, our best method obtains an average precision of $87.6\%$ in a fully automatic manner.
+\end{abstract}
+
+%--------------------------------------------------------------------------------------------------
+% Palavras-chaves: Entre 3 e 6 palavras chaves
+%--------------------------------------------------------------------------------------------------
+\begin{keyword}
+  \kwd{Escreva}
+  \kwd{algumas}
+  \kwd{palavras-chaves}
+  \kwd{aqui!}
+\end{keyword}
+
+\end{abstractbox} % Não alterar
+\end{frontmatter} % Não alterar
+
+%--------------------------------------------------------------------------------------------------
+% Escreva o seu artigo!
+%--------------------------------------------------------------------------------------------------
+
+%------------------------------------------------
+% Seção 1
+%------------------------------------------------
+\section{Introdução}
+
+Escreva introdução e motivação do seu trabalho. Tente convencer o leitor da importância da sua pesquisa. Exemplo: If you read any book on film editing or listen to a director's commentary on a DVD, then what emerges again and again is the importance of eyelines. Standard cinematography practice is to first establish which characters are looking at each other using a medium or wide shot, and then edit subsequent close-up shots so that the eyelines match the point of view of the characters. This is the basis of the well known $180^{o}$ rule in editing.
+
+The objective of this paper is to determine whether eyelines match between characters within a shot—and hence understand which of the characters are interacting~\cite{Pressman:2007}. The importance of the eyeline is illustrated by the three examples of Figure~\ref{tag_figura_01} - one giving rise to arguably the most famous quote from Casablanca, and another being the essence of the humour at that point in an episode of Fawlty Towers. Our target application is this type of edited TV video and films. It is very challenging material as there is a wide range of human actors, camera viewpoints and ever present background clutter. The thirty Brodatz textures u asl sklsksj slk slk dsed are shown in Figure~\ref{tag_figura_01}.
+
+begin
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[width=1.0 \textwidth]{figura01.jpg}
+    \caption{Exemplo de Figura 01.} 
+    \label{tag_figura_01}
+  \end{center}
+\end{figure}
+
+Gray level co-occurrence matrix (GLCM)~\cite{Ferris:2003} describes the relative frequencies with which two pixels separated by a distance $d$ under a specified angle occur on the image. Then, the GLCM matrices are pre-processed in order to obtain input data for the clustering or classification modules. In the Clustering module the SOM neural network organises and extracts prototypes from the processed matrices, which ends the learning stage. The classification module receives a pre-processed query image and compares it with the prototypes (representations of clusters) obtained in the clustering module. The final result is a list of images belonging to a few number of clusters considered to be the nearest to the user's query. Figure~\ref{tag_figura_02} shows these building blocks.
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[width=1.0 \textwidth]{figura02.jpg}
+    \caption{Exemplo de Figura 02.} 
+    \label{tag_figura_02}
+  \end{center}
+\end{figure}
+
+%------------------------------------------------
+% Seção 2
+%------------------------------------------------
+\section{Motivação}
+
+If we assume that sensitive cells follow a deterministic decay $Z_0(t) = xe^{\lambda_0 t}$ and approximate their extinction time as $T_x \approx \frac{1}{\lambda_0} \log x$, then we can heuristically estimate the expected value as:
+
+\begin{eqnarray}
+\label{eqexpmuts}
+  E [Z_1(vT_x)] &=& \frac{\mu}{r}\log x \int_0^{1} x^{1-u} du \\
+  E [Z_1(vT_x)] &=& \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log  \\
+  1 &=& 10
+\end{eqnarray}
+
+\begin{equation}
+  E [Z_1(vT_x)] = \frac{\mu}{r}\log x \int_0^{1} x^{1-u} du \\
+  E [Z_1(vT_x)] = \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log 
+\end{equation}
+
+Thus we observe that this expected value is finite for all $v>0$ (also see \cite{Rosenfeld:1970}).
+
+%------------------------------------------------
+% Sub-seção
+%------------------------------------------------
+\subsection{Exemplo de Sub-Seção}
+
+In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$. In addition, we examine a common modeling assumption and note the importance of considering the tails of the extinction time $T_x$ in studies of escape dynamics. We will first consider the expected resistant population at $vT_x$ for some $v>0$, (and temporarily assume $\alpha=0$).
+
+\begin{eqnarray}
+E [Z_1(vT_x)]= \mu T_x \int_{0}^{\inf} \lambda_1T_x(v-u)du
+\end{eqnarray}
+
+If we assume that sensitive cells follow a deterministic decay $Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as $T_x\approx-\frac{1}{\lambda_0}\log x$, then we can heuristically estimate the expected value as.
+
+%------------------------------------------------
+% Exemplo de Tabela
+%------------------------------------------------
+\section{Exemplo de Tabela}
+
+Table~\ref{tag_tabela_01} shows the average $ \alpha $ and the standard deviation for the CCR \cite{Rosenfeld:1970} obtained by the \textit{GLCM+SOM} method. We can conclude that for the Brodatz dataset~\cite{Domingues:2010} the processing tool based on mean vectors is the best option~\cite{Rosenfeld:1970, Diday:1989}. Considering this result~\cite{Visible:2013}, the mean vector approach is adopted as processing tool of the \textit{GLCM+SOM} method for the next experiments \cite{Fulano:2009}.
+
+% Use a ferramenta para criar tabelas: http://www.tablesgenerator.com/
+\begin{table}[h!]
+\label{tag_tabela_01}
+\caption{Sample table title. This is where the description of the table should go.}
+  \begin{tabular}{cccc}
+  \hline
+       & B1   & B2   & B3   \\ \hline
+   A1  & 0.1  & 0.2  & 0.3  \\
+   A2  & ...  & ..   & .    \\
+   A3  & ..   & .    & .    \\ \hline
+  \end{tabular}
+\end{table}
+
+%--------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------
+% Define o arquivo BIB (bibliografia)
+%--------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------
+\bibliographystyle{bmc-mathphys}   % NAO EDITAR!
+\bibliography{artigo_bibliografia} % NAO EDITAR! - Bibliography file (usually '*.bib' )
+
+\vspace{1.0cm}
+\parpic{\includegraphics[width=1.5in,clip,keepaspectratio]{tesla.jpg}}
+\noindent {\bf Fulano de Tal} was born in India. She received the B.S. 
+degree in computer science from Kurukshetra University, Kurukshetra, 
+India and the M.Phil. and Ph.D. degrees from the University of Exeter, 
+Exeter, UK in 1999, 2001 and 2004, respectively. Her Ph.D. was in the 
+area of machine learning for image analysis in aviation security. Her 
+main research interests include image processing, natural scene analysis,
+video analysis, and neural networks. She has published more than 30 papers
+in the area of machine learning for image analysis in peer reviewed 
+journals and conferences. Currently she is a Senior Research Fellow at
+Loughborough University leading the project on imaging for road transport
+applications.
+
+\parpic{\includegraphics[width=1.5in,clip,keepaspectratio]{tesla.jpg}}
+\noindent {\bf Fulano de Tal} was born in India. She received the B.S. 
+degree in computer science from Kurukshetra University, Kurukshetra, 
+India and the M.Phil. and Ph.D. degrees from the University of Exeter, 
+Exeter, UK in 1999, 2001 and 2004, respectively. Her Ph.D. was in the 
+area of machine learning for image analysis in aviation security. Her 
+main research interests include image processing, natural scene analysis,
+video analysis, and neural networks. She has published more than 30 papers
+in the area of machine learning for image analysis in peer reviewed 
+journals and conferences. Currently she is a Senior Research Fellow at
+Loughborough University leading the project on imaging for road transport
+applications.   
+
+
+%\end{tabular}
+%\end{table}
+
+%--------------------------------------------------------------------------------------------------
+% FIM DO ARTIGO
+%--------------------------------------------------------------------------------------------------
+\end{document}
