@@ -13,7 +13,10 @@
 % versão 1.1 - 19/05/2016
 % versão 1.0 - 18/08/2015
 %--------------------------------------------------------------------------------------------------
-\documentclass{classe_cn}                 % Modelo <nao edite o arquivo classe_cn.cls>
+\documentclass[11pt]{classe_cn}                 % Modelo <nao edite o arquivo classe_cn.cls>
+\makeatletter
+\setattribute{leftarea}{width}{123\p@}
+\makeatother
 \usepackage[brazil]{babel}                % Acentos
 \usepackage[utf8]{inputenc}               % Codificação UTF8 (atenção aqui!)
 \usepackage{graphicx}                     % Figura
@@ -148,11 +151,7 @@ Escrever no máximo $150$ palavras no resumo do trabalho. Exemplo: The objective
 % Seção 1
 %------------------------------------------------
 \section{Introdução}
-
-Escreva introdução e motivação do seu trabalho. Tente convencer o leitor da importância da sua pesquisa. Exemplo: If you read any book on film editing or listen to a director's commentary on a DVD, then what emerges again and again is the importance of eyelines. Standard cinematography practice is to first establish which characters are looking at each other using a medium or wide shot, and then edit subsequent close-up shots so that the eyelines match the point of view of the characters. This is the basis of the well known $180^{o}$ rule in editing.
-
-The objective of this paper is to determine whether eyelines match between characters within a shot—and hence understand which of the characters are interacting~\cite{Pressman:2007}. The importance of the eyeline is illustrated by the three examples of Figure~\ref{tag_figura_01} - one giving rise to arguably the most famous quote from Casablanca, and another being the essence of the humour at that point in an episode of Fawlty Towers. Our target application is this type of edited TV video and films. It is very challenging material as there is a wide range of human actors, camera viewpoints and ever present background clutter. The thirty Brodatz textures u asl sklsksj slk slk dsed are shown in Figure~\ref{tag_figura_01}.
-
+Texto
 
 %------------------------------------------------
 % Seção 2
@@ -238,4 +237,23 @@ quando não podemos atender, seja avisar que sua dispensa está ficando vazia.
 %--------------------------------------------------------------------------------------------------
 % FIM DO ARTIGO
 %--------------------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------
+% Define o arquivo BIB (bibliografia)
+%--------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------
+\bibliographystyle{bmc-mathphys}   % NAO EDITAR!
+\bibliography{artigo_bibliografia} % NAO EDITAR! - Bibliography file (usually '*.bib' )
+
+\vspace{1.0cm}
+\noindent {\bf Alice Fernandes Silva}
+
+\noindent {\bf Ellen}
+
+
+\noindent {\bf Ivyna Rayany Santino Alves}
+
+
+\noindent {\bf Kaio Kassiano Moura Oliveira}
 \end{document}
