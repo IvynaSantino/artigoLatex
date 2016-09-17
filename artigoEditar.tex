@@ -153,45 +153,12 @@ Escreva introdução e motivação do seu trabalho. Tente convencer o leitor da 
 
 The objective of this paper is to determine whether eyelines match between characters within a shot—and hence understand which of the characters are interacting~\cite{Pressman:2007}. The importance of the eyeline is illustrated by the three examples of Figure~\ref{tag_figura_01} - one giving rise to arguably the most famous quote from Casablanca, and another being the essence of the humour at that point in an episode of Fawlty Towers. Our target application is this type of edited TV video and films. It is very challenging material as there is a wide range of human actors, camera viewpoints and ever present background clutter. The thirty Brodatz textures u asl sklsksj slk slk dsed are shown in Figure~\ref{tag_figura_01}.
 
-begin
-\begin{figure}[h!]
-  \begin{center}
-    \includegraphics[width=1.0 \textwidth]{figura01.jpg}
-    \caption{Exemplo de Figura 01.} 
-    \label{tag_figura_01}
-  \end{center}
-\end{figure}
-
-Gray level co-occurrence matrix (GLCM)~\cite{Ferris:2003} describes the relative frequencies with which two pixels separated by a distance $d$ under a specified angle occur on the image. Then, the GLCM matrices are pre-processed in order to obtain input data for the clustering or classification modules. In the Clustering module the SOM neural network organises and extracts prototypes from the processed matrices, which ends the learning stage. The classification module receives a pre-processed query image and compares it with the prototypes (representations of clusters) obtained in the clustering module. The final result is a list of images belonging to a few number of clusters considered to be the nearest to the user's query. Figure~\ref{tag_figura_02} shows these building blocks.
-
-\begin{figure}[h!]
-  \begin{center}
-    \includegraphics[width=1.0 \textwidth]{figura02.jpg}
-    \caption{Exemplo de Figura 02.} 
-    \label{tag_figura_02}
-  \end{center}
-\end{figure}
 
 %------------------------------------------------
 % Seção 2
 %------------------------------------------------
 \section{Motivação}
-
-If we assume that sensitive cells follow a deterministic decay $Z_0(t) = xe^{\lambda_0 t}$ and approximate their extinction time as $T_x \approx \frac{1}{\lambda_0} \log x$, then we can heuristically estimate the expected value as:
-
-\begin{eqnarray}
-\label{eqexpmuts}
-  E [Z_1(vT_x)] &=& \frac{\mu}{r}\log x \int_0^{1} x^{1-u} du \\
-  E [Z_1(vT_x)] &=& \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log  \\
-  1 &=& 10
-\end{eqnarray}
-
-\begin{equation}
-  E [Z_1(vT_x)] = \frac{\mu}{r}\log x \int_0^{1} x^{1-u} du \\
-  E [Z_1(vT_x)] = \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log 
-\end{equation}
-
-Thus we observe that this expected value is finite for all $v>0$ (also see \cite{Rosenfeld:1970}).
+Texto
 
 %------------------------------------------------
 % Sub-seção
@@ -267,66 +234,6 @@ logo torna possível a conexão inteligente entre os dispositivos e
 serem capazes de tomar decisões para a melhoria e conforto de 
 atividades realizadas no cotidiano, seja ela como enviar mensagens 
 quando não podemos atender, seja avisar que sua dispensa está ficando vazia.
-
-
-%------------------------------------------------
-% Exemplo de Tabela
-%------------------------------------------------
-\section{Exemplo de Tabela}
-
-Table~\ref{tag_tabela_01} shows the average $ \alpha $ and the standard deviation for the CCR \cite{Rosenfeld:1970} obtained by the \textit{GLCM+SOM} method. We can conclude that for the Brodatz dataset~\cite{Domingues:2010} the processing tool based on mean vectors is the best option~\cite{Rosenfeld:1970, Diday:1989}. Considering this result~\cite{Visible:2013}, the mean vector approach is adopted as processing tool of the \textit{GLCM+SOM} method for the next experiments \cite{Fulano:2009}.
-
-% Use a ferramenta para criar tabelas: http://www.tablesgenerator.com/
-\begin{table}[h!]
-\label{tag_tabela_01}
-\caption{Sample table title. This is where the description of the table should go.}
-  \begin{tabular}{cccc}
-  \hline
-       & B1   & B2   & B3   \\ \hline
-   A1  & 0.1  & 0.2  & 0.3  \\
-   A2  & ...  & ..   & .    \\
-   A3  & ..   & .    & .    \\ \hline
-  \end{tabular}
-\end{table}
-
-%--------------------------------------------------------------------------------------------------
-%--------------------------------------------------------------------------------------------------
-% Define o arquivo BIB (bibliografia)
-%--------------------------------------------------------------------------------------------------
-%--------------------------------------------------------------------------------------------------
-\bibliographystyle{bmc-mathphys}   % NAO EDITAR!
-\bibliography{artigo_bibliografia} % NAO EDITAR! - Bibliography file (usually '*.bib' )
-
-\vspace{1.0cm}
-\parpic{\includegraphics[width=1.5in,clip,keepaspectratio]{tesla.jpg}}
-\noindent {\bf Fulano de Tal} was born in India. She received the B.S. 
-degree in computer science from Kurukshetra University, Kurukshetra, 
-India and the M.Phil. and Ph.D. degrees from the University of Exeter, 
-Exeter, UK in 1999, 2001 and 2004, respectively. Her Ph.D. was in the 
-area of machine learning for image analysis in aviation security. Her 
-main research interests include image processing, natural scene analysis,
-video analysis, and neural networks. She has published more than 30 papers
-in the area of machine learning for image analysis in peer reviewed 
-journals and conferences. Currently she is a Senior Research Fellow at
-Loughborough University leading the project on imaging for road transport
-applications.
-
-\parpic{\includegraphics[width=1.5in,clip,keepaspectratio]{tesla.jpg}}
-\noindent {\bf Fulano de Tal} was born in India. She received the B.S. 
-degree in computer science from Kurukshetra University, Kurukshetra, 
-India and the M.Phil. and Ph.D. degrees from the University of Exeter, 
-Exeter, UK in 1999, 2001 and 2004, respectively. Her Ph.D. was in the 
-area of machine learning for image analysis in aviation security. Her 
-main research interests include image processing, natural scene analysis,
-video analysis, and neural networks. She has published more than 30 papers
-in the area of machine learning for image analysis in peer reviewed 
-journals and conferences. Currently she is a Senior Research Fellow at
-Loughborough University leading the project on imaging for road transport
-applications.   
-
-
-%\end{tabular}
-%\end{table}
 
 %--------------------------------------------------------------------------------------------------
 % FIM DO ARTIGO
